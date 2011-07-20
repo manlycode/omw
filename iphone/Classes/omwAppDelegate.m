@@ -7,7 +7,7 @@
 //
 
 #import "omwAppDelegate.h"
-#import "PhoneGapViewController.h"
+#import <PhoneGap/PhoneGapViewController.h>
 
 @implementation omwAppDelegate
 

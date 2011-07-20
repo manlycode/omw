@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "PhoneGapDelegate.h"
+#import <PhoneGap/PhoneGapDelegate.h>
 
 @interface omwAppDelegate : PhoneGapDelegate {
 }

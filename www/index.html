@@ -1,18 +1,43 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-	<meta charset="utf-8" /> 
-	<title>On My Way</title> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css" /> 
-	<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"></script>
-	<script type="text/javascript" src="javascript/jquery.tmpl.min.js"></script>
-	<script type="text/javascript" src="lawnchair/Lawnchair.js"></script>
-	<script type="text/javascript" src="lawnchair/adaptors/LawnchairAdaptorHelpers.js"></script>
-	<script type="text/javascript" src="lawnchair/adaptors/DOMStorageAdaptor.js"></script>
-	<script type="text/javascript" src="javascript/connections.js"></script>
+	<meta charset="utf-8" />
+	<title>On My Way</title>
+  <link rel="stylesheet" href="jquerymobile/jquery.mobile-1.0b1.min.css" />
+  <script type="text/javascript" src="phonegap.js"></script>
+  <!-- <script type="text/javascript" src="javascript/jquery-1.6.2.min.js"></script>-->
+  <!-- <script type="text/javascript" src="jquerymobile/jquery.mobile-1.0b1.min.js"></script>-->
+	<!-- <script type="text/javascript" src="javascript/jquery.tmpl.min.js"></script>-->
+	<!-- <script type="text/javascript" src="lawnchair/Lawnchair.js"></script>-->
+	<!-- <script type="text/javascript" src="lawnchair/adaptors/LawnchairAdaptorHelpers.js"></script>-->
+	<!-- <script type="text/javascript" src="lawnchair/adaptors/DOMStorageAdaptor.js"></script>-->
+  <!-- <script type="text/javascript" src="javascript/connections.js"></script>-->
+  <script type="text/javascript" charset="utf-8">
+
+
+	// If you want to prevent dragging, uncomment this section
+	function preventBehavior(e)
+	{
+      e.preventDefault();
+    };
+	document.addEventListener("touchmove", preventBehavior, false);
+	
+	function onBodyLoad()
+	{
+		document.addEventListener("deviceready",onDeviceReady,false);
+	}
+	
+	/* When this function is called, PhoneGap has been initialized and is ready to roll */
+	function onDeviceReady()
+  {
+    alert("sometimes, this works");
+    console.log("hey there");
+  }
+    </script>
+
 </head>
-<body>
+
+<body onload="onBodyLoad()">
 	<div data-role="page" id="connections">
 		<div data-role="header">
 			<h1>On My Way Now</h1>

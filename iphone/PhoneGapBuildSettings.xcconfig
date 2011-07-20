@@ -1,7 +1,0 @@
-//
-//  PhoneGap.xcconfig
-//  omw
-//
-
-// Override this to use your project specific PHONEGAPLIB
-PHONEGAPLIB = ../phonegap/iphone/PhoneGapLib
