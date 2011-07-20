@@ -4,4 +4,4 @@
 //
 
 // Override this to use your project specific PHONEGAPLIB
-PHONEGAPLIB = $(PHONEGAPLIB)
+PHONEGAPLIB = ../phonegap/iphone/PhoneGapLib
